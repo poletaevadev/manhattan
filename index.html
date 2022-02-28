@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manhattan</title>
+  <link href="https://unpkg.com/swiper@7/swiper-bundle.min.css" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="libs/hover-min.css" rel="stylesheet">
+  <link href="css/style-cross.css" rel="stylesheet">
+  <link href="img/favicon-manhattan.ico" rel="icon" type="image/x-icon">
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js" defer></script>
+  <script src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js" defer></script>
+  <script src="js/theme-switch.js" defer></script>
+  <script src="js/swiper.js" defer></script>
+  <script src="js/js-menu.js" defer></script>
+  <script src="js/scroll-link.js" defer></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header__container flex">
+      <a class="header__logo logo">
+        <svg width="195" height="33" viewBox="0 0 195 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M2.1 26H7.2V12.5L13.95 26H18.75L25.5 12.5V26H30.6V6.2H23.85L16.35 21.2L8.85 6.2H2.1V26ZM34.4953 22.55C34.4953 26 37.4953 26 40.4953 26H53.0953V15.05C53.0953 11.6 50.0953 11.6 47.0953 11.6H35.6953V14.45H46.7953C47.5453 14.45 48.2953 14.45 48.2953 15.35V17H40.4953C37.4953 17 34.4953 17 34.4953 20.45V22.55ZM39.2953 22.25V20.75C39.2953 19.85 40.0453 19.85 40.7953 19.85H48.2953V23.15H40.7953C40.0453 23.15 39.2953 23.15 39.2953 22.25ZM56.7023 26H61.5023V14.45H69.0023C69.7523 14.45 70.5023 14.45 70.5023 15.35V26H75.3023V15.05C75.3023 11.6 72.3023 11.6 69.3023 11.6H56.7023V26ZM78.9094 26H83.7094V14.45H91.2094C91.9594 14.45 92.7094 14.45 92.7094 15.35V26H97.5094V15.05C97.5094 11.6 94.5094 11.6 91.5094 11.6H83.7094V6.2H78.9094V26ZM101.116 22.55C101.116 26 104.116 26 107.116 26H119.716V15.05C119.716 11.6 116.716 11.6 113.716 11.6H102.316V14.45H113.416C114.166 14.45 114.916 14.45 114.916 15.35V17H107.116C104.116 17 101.116 17 101.116 20.45V22.55ZM105.916 22.25V20.75C105.916 19.85 106.666 19.85 107.416 19.85H114.916V23.15H107.416C106.666 23.15 105.916 23.15 105.916 22.25ZM123.323 22.55C123.323 26 126.323 26 129.323 26H134.123V23.15H129.623C128.873 23.15 128.123 23.15 128.123 22.25V14.45H134.123V11.6H128.123V6.2H123.323V22.55ZM137.738 22.55C137.738 26 140.738 26 143.738 26H148.538V23.15H144.038C143.288 23.15 142.538 23.15 142.538 22.25V14.45H148.538V11.6H142.538V6.2H137.738V22.55ZM152.152 22.55C152.152 26 155.152 26 158.152 26H170.752V15.05C170.752 11.6 167.752 11.6 164.752 11.6H153.352V14.45H164.452C165.202 14.45 165.952 14.45 165.952 15.35V17H158.152C155.152 17 152.152 17 152.152 20.45V22.55ZM156.952 22.25V20.75C156.952 19.85 157.702 19.85 158.452 19.85H165.952V23.15H158.452C157.702 23.15 156.952 23.15 156.952 22.25ZM174.359 26H179.159V14.45H186.659C187.409 14.45 188.159 14.45 188.159 15.35V26H192.959V15.05C192.959 11.6 189.959 11.6 186.959 11.6H174.359V26Z"
+            fill="#343434"></path>
+        </svg>
+      </a>
+      <div class="header__theme toggle-container">
+        <input class="header__checkbox themeSwitch visually-hidden" id="themeSwitch" type="checkbox" name="theme">
+        <label class="header__label" for="themeSwitch"></label>
+      </div>
+      <nav class="header__nav nav" id="menu">
+        <div class="header__nav-wrap">
+          <ul class="nav__list list-reset flex">
+            <li class="nav__item">
+              <a class="nav__link js-scroll-link" href="#about" aria-label="О проекте">
+                О проекте
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link js-scroll-link" href="#environment" aria-label="Окружение">
+                Окружение
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link js-scroll-link" href="#" aria-label="Предложения">
+                Предложения
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link js-scroll-link" href="#contacts" aria-label="Контакты">
+                Контакты
+              </a>
+            </li>
+          </ul>
+          <div class="header__theme header__theme-mob toggle-container">
+            <span class="header__theme-label">
+              Сменить тему
+            </span>
+            <input class="header__checkbox themeSwitch-mob visually-hidden" id="themeSwitch-mob" type="checkbox"
+              name="theme-mob">
+            <label class="header__label" for="themeSwitch-mob"></label>
+          </div>
+        </div>
+        <button class="btn-reset header__burger" id="burger" aria-label="Меню">
+          <span class="header__burger-line"></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero__container container flex">
+        <h1 class="hero__title">
+          Тихий дом в самом центре Москвы
+        </h1>
+        <p class="hero__descr">
+          Место, способствующее нахождению и поддержанию равновесия внешнего и внутреннего.
+        </p>
+      </div>
+      <picture>
+        <source srcset="img/mob/mob-hero.jpg" media="(max-width: 320px)">
+        <source srcset="img/tab/tab-hero.jpg" media="(max-width: 840px)">
+        <img class="hero__img" src="img/hero.jpg" alt="Изображение">
+      </picture>
+    </section>
+    <section class="about section" id="about">
+      <div class="about__container container">
+        <h2 class="about__title section-title">
+          О проекте
+        </h2>
+        <div class="about__content flex">
+          <p class="about__descr section-descr">
+            Вдохновением для создания концепции послужила исходная архитектура самого Дома: геометричные элементы
+            парадного фасада, приковывающие к себе внимание, светлые и&nbsp;просторные помещения с&nbsp;пятиметровыми
+            потолками, сразу отсылают к&nbsp;эстетике американского классического ар-деко.
+          </p>
+          <p class="about__descr section-descr">
+            Его влияние быстро охватило Америку начала 19&nbsp;века, формировало образ жизни того периода, который
+            характеризуется бурным ростом экономики, развитием технологий, машиностроения и&nbsp;строительства
+            культовых известнейших арх-сооружений, а&nbsp;также развитием кино.
+          </p>
+          <p class="about__descr section-descr">
+            Создатели проекта хотели перенести вас в&nbsp;торжественную атмосферу изысканных вечерних туалетов,
+            энергичных танцев под звуки джаза, веселья и&nbsp;духа свободы в&nbsp;окружении элегантных интерьеров.
+            Добро&nbsp;пожаловать в&nbsp;клубный Дом&nbsp;Manhattan...
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="environment section" id="environment">
+      <div class="environment__container container flex">
+        <div class="environment__container-right flex">
+          <h2 class="environment__title section-title">
+            Окружение
+          </h2>
+          <p class="environment__descr section-descr">
+            ЦАО Пресненский район:
+          </p>
+          <p class="environment__descr section-descr">
+            Москва-Сити, Центр международной торговли, известные театры, музеи, лучшие рестораны - центр Москвы - центр
+            притяжения успеха, вдохновения и&nbsp;силы.
+          </p>
+          <p class="environment__descr section-descr">
+            Идеальное расположение в&nbsp;тихом переулке обеспечивает ощущение клубности и&nbsp;приватности владельцам
+            дома Manhattan.
+          </p>
+        </div>
+        <picture>
+          <source srcset="img/mob/mob-environment.jpg" media="(max-width: 320px)">
+          <source srcset="img/tab/tab-environment.jpg" media="(max-width: 840px)">
+          <img class="environment__img" src="img/environment.jpg" alt="Изображение">
+        </picture>
+      </div>
+    </section>
+    <section class="advantages section">
+      <div class="advantages__container container">
+        <h2 class="advantages__title section-title">
+          Преимущества
+        </h2>
+        <ul class="advantages__content list-reset flex">
+          <li class="advantages__item flex">
+            <h3 class="advantages__item-title  item-title">
+              Уникальная архитектура
+            </h3>
+            <p class="advantages__item-descr section-descr">
+              Это будущая достопримечательность Пресненского района&nbsp;&mdash; места, где исторически стоят
+              здания-символы, знаки своих эпох.
+            </p>
+          </li>
+          <li class="advantages__item flex">
+            <h3 class="advantages__item-title item-title">
+              Видовые характеристики
+            </h3>
+            <p class="advantages__item-descr section-descr">
+              Большие панорамные окна открывют прекрасный вид на&nbsp;центр Москвы&nbsp;&mdash; центр притяжения успеха,
+              вдохновения&nbsp;и&nbsp;силы.
+            </p>
+          </li>
+          <li class="advantages__item flex">
+            <h3 class="advantages__item-title item-title">
+              Пентхаусы: 5м&nbsp;потолки
+            </h3>
+            <p class="advantages__item-descr section-descr">
+              Высота потолков в&nbsp;5&nbsp;метров с панорамным остеклением позволила сделать второй уровень
+              в&nbsp;левой и правой части большой гостиной.
+            </p>
+          </li>
+          <li class="advantages__item flex">
+            <h3 class="advantages__item-title item-title">
+              Фитнес зона
+            </h3>
+            <p class="advantages__item-descr section-descr">
+              В&nbsp;фитнесе Manhattan к&nbsp;услугам жильцов комплекса будет доступен 25&#8209;метровый бассейн и
+              профессиональные инструкторы.
+            </p>
+          </li>
+          <li class="advantages__item flex">
+            <h3 class="advantages__item-title item-title">
+              Детская зона
+            </h3>
+            <p class="advantages__item-descr section-descr">
+              Детские игровые комнаты с аниматорами&nbsp;&mdash; где можно оставить детей на&nbsp;развивающую программу
+              или&nbsp;помочь им&nbsp;найти друзей.
+            </p>
+          </li>
+          <li class="advantages__item flex">
+            <h3 class="advantages__item-title item-title">
+              Приватность
+            </h3>
+            <p class="advantages__item-descr section-descr">
+              Наш дом находится в&nbsp;тихой и&nbsp;уютной тупиковой улице, где почти нет машин и&nbsp;прохожих. Это
+              обеспечивает уникальную тишину и&nbsp;приватность.
+            </p>
+          </li>
+          <li class="advantages__item flex">
+            <h3 class="advantages__item-title item-title">
+              Просторные террасы
+            </h3>
+            <p class="advantages__item-descr section-descr">
+              На&nbsp;кровле установлены ограждения из ламелей. Покрытие террас выполнено из&nbsp;массива
+              термообработанного дуба.
+            </p>
+          </li>
+          <li class="advantages__item flex">
+            <h3 class="advantages__item-title item-title">
+              Собственный ритейл
+            </h3>
+            <p class="advantages__item-descr section-descr">
+              Изысканные рестораны авторской кухни и&nbsp;уютные кофейни, винотеки и&nbsp;супермаркеты.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="kinds section">
+      <div class="kinds__container container">
+        <h2 class="kinds__title section-title">
+          Клубный Дом Manhattan &mdash;&nbsp;это семь этажей и всего 90 апартаментов.
+        </h2>
+        <div class="kinds__content flex">
+          <picture>
+            <source srcset="img/mob/mob-apartments.jpg" media="(max-width: 320px)">
+            <source srcset="img/tab/tab-apartments.jpg" media="(max-width: 840px)">
+            <img class="kinds__img" src="img/apartments.jpg" alt="Апартаменты">
+          </picture>
+          <div class="kinds__item apartments-item flex">
+            <h3 class="kinds__item-title item-title">
+              Апартаменты
+            </h3>
+            <p class="kinds__item-descr section-descr">
+              Со&nbsp;второго по&nbsp;шестой этаж гармонично спланированы апартаменты различной площади
+              от&nbsp;35&nbsp;до&nbsp;80&nbsp;м2, жителям каждого из которых гарантирована максимальная приватность
+              и комфорт.
+            </p>
+            <a class="kinds__link hvr-sweep-to-right" href="#" aria-label="Стоимость по запросу">
+              Стоимость по запросу
+            </a>
+          </div>
+        </div>
+        <div class="kinds__content flex">
+          <div class="kinds__item flex">
+            <h3 class="kinds__item-title item-title">
+              Пентхаусы
+            </h3>
+            <p class="kinds__item-descr section-descr">
+              На&nbsp;седьмом этаже Дома предусмотрено несколько пентхаусов. В&nbsp;распоряжении их жителей: высокие
+              потолки 5,5&nbsp;метров, свободная планировка для создания стильного, торжественного интерьера.
+            </p>
+            <a class="kinds__link hvr-sweep-to-right" href="#" aria-label="Стоимость по запросу">
+              Стоимость по запросу
+            </a>
+          </div>
+          <picture>
+            <source srcset="img/mob/mob-penthouses.jpg" media="(max-width: 320px)">
+            <source srcset="img/tab/tab-penthouses.jpg" media="(max-width: 840px)">
+            <img class="kinds__img" src="img/penthouses.jpg" alt="Пентхаус">
+          </picture>
+        </div>
+      </div>
+    </section>
+    <section class="style section">
+      <div class="style__container container flex">
+        <div class="style__container-right flex">
+          <h2 class="style__title section-title">
+            Стиль
+          </h2>
+          <p class="style__descr section-descr">
+            Главный фасад здания исполнен в&nbsp;неоклассическом стиле с выступающими деталями и&nbsp;большим
+            количество окон. Это четко очерченная композиция из&nbsp;полированного гранита с элементами рустики,
+            крупноформатного керамогранита и декоративными элементами, выполненными на&nbsp;заказ.
+          </p>
+          <p class="style__descr section-descr">
+            В&nbsp;основе интерьеров Дома Manhattan приоритетными являются эстетика, где видимая роскошь сочетается с
+            комфортом, в&nbsp;неё идеально вписываются любые технические прибооры и&nbsp;устройства. Это позволяет
+            создавать действительно актуальные и&nbsp;модные решения в рамках устоявшейся классики.
+          </p>
+        </div>
+        <picture>
+          <source srcset="img/mob/mob-style.jpg" media="(max-width: 320px)">
+          <source srcset="img/tab/tab-style.jpg" media="(max-width: 840px)">
+          <img class="style__img" src="img/style.jpg" alt="Изображение">
+        </picture>
+      </div>
+    </section>
+    <section class="specifications section">
+      <div class="specifications__container container">
+        <h2 class="specifications__title section-title">
+          Технические характеристики
+        </h2>
+        <ul class="specifications__content list-reset flex">
+          <li class="specifications__item flex">
+            <h3 class="specifications__item-title item-title">
+              Сервис
+            </h3>
+            <p class="specifications__item-descr section-descr">
+              Две зоны ресепшн 24/7
+            </p>
+          </li>
+          <li class="specifications__item flex">
+            <h3 class="specifications__item-title item-title">
+              Паркинг
+            </h3>
+            <p class="specifications__item-descr section-descr">
+              Наземный, охраняемый паркинг
+            </p>
+          </li>
+          <li class="specifications__item flex">
+            <h3 class="specifications__item-title item-title">
+              Лифты
+            </h3>
+            <p class="specifications__item-descr section-descr">
+              Бесшумные премиальные лифты OTIS
+            </p>
+          </li>
+          <li class="specifications__item flex">
+            <h3 class="specifications__item-title item-title">
+              Территория
+            </h3>
+            <p class="specifications__item-descr section-descr">
+              Огороженная и&nbsp;охраняемая территория
+            </p>
+          </li>
+          <li class="specifications__item flex">
+            <h3 class="specifications__item-title item-title">
+              Окна
+            </h3>
+            <p class="specifications__item-descr section-descr">
+              Высококачественные стеклопакеты с&nbsp;повышенным уровнем шумоизоляции
+            </p>
+          </li>
+          <li class="specifications__item flex">
+            <h3 class="specifications__item-title item-title">
+              Пожарная сигнализация
+            </h3>
+            <p class="specifications__item-descr section-descr">
+              Автоматическая система пожаротушения в&nbsp;каждом апартаменте
+            </p>
+          </li>
+          <li class="specifications__item flex">
+            <h3 class="specifications__item-title item-title">
+              Вентиляция
+            </h3>
+            <p class="specifications__item-descr section-descr">
+              Система принудительной приточно-вытяжной вентиляции
+            </p>
+          </li>
+          <li class="specifications__item flex">
+            <h3 class="specifications__item-title item-title">
+              Кондиционирование
+            </h3>
+            <p class="specifications__item-descr section-descr">
+              Центральная Система кондиционирования
+            </p>
+          </li>
+          <li class="specifications__item flex">
+            <h3 class="specifications__item-title item-title">
+              Система безопасности
+            </h3>
+            <p class="specifications__item-descr section-descr">
+              Видеонаблюдение, система охраны периметра дома, современная система контроля доступа
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <div class="slider" id="slider">
+      <div class="slider__content">
+        <div class="slider__content-left slider-arrow flex">
+          <button class="slider__btn slider__btn-prev btn-reset cursor-left" aria-label="Предыдущие слайды">
+            <svg class="slider__btn-img" width="45" height="46" viewBox="0 0 45 46" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M6.0166 23.1834L12.2501 29.4662L11.1871 30.5376L3.21434 22.5019L11.1871 14.4662L12.2501 15.5376L6.16758 21.6682L41.7858 21.6682L41.7858 23.1834L6.0166 23.1834Z"
+                fill="#343434"></path>
+            </svg>
+          </button>
+        </div>
+        <div class="swiper swiper-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <picture>
+                <source srcset="img/mob/mob-slider-1.jpg" media="(max-width: 320px)">
+                <source srcset="img/tab/tab-slider-1.jpg" media="(max-width: 840px)">
+                <img class="swiper__img" src="img/slider-1.jpg" alt="Слайд">
+              </picture>
+            </div>
+            <div class="swiper-slide swiper-slide-active">
+              <picture>
+                <source srcset="img/mob/mob-slider-1.jpg" media="(max-width: 320px)">
+                <source srcset="img/tab/tab-slider-1.jpg" media="(max-width: 840px)">
+                <img class="swiper__img" src="img/slider-1.jpg" alt="Слайд">
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture>
+                <source srcset="img/mob/mob-slider-1.jpg" media="(max-width: 320px)">
+                <source srcset="img/tab/tab-slider-1.jpg" media="(max-width: 840px)">
+                <img class="swiper__img" src="img/slider-1.jpg" alt="Слайд">
+              </picture>
+            </div>
+          </div>
+        </div>
+        <div class="slider__content-right slider-arrow flex">
+          <button class="slider__btn slider__btn-next btn-reset" aria-label="Следующие слайды">
+            <svg class="slider__btn-img" width="45" height="46" viewBox="0 0 45 46" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M6.0166 23.1834L12.2501 29.4662L11.1871 30.5376L3.21434 22.5019L11.1871 14.4662L12.2501 15.5376L6.16758 21.6682L41.7858 21.6682L41.7858 23.1834L6.0166 23.1834Z"
+                fill="#343434"></path>
+            </svg>
+          </button>
+        </div>
+
+
+      </div>
+      <div class="slider__pagination flex"></div>
+    </div>
+    <section class="comfort section">
+      <div class="comfort__container container">
+        <h2 class="comfort__title section-title">
+          Зона комфорта
+        </h2>
+        <div class="comfort__content flex">
+          <p class="comfort__descr section-descr">
+            Уровень комфорта зачастую определяет уровень жизни. Поэтому,&nbsp;мы&nbsp;продумали каждую деталь.
+            Путешествие в&nbsp;мир безупречного вкуса, начинается с лобби: стены украшает покрытие из натурального
+            камня, зеркальные декоративные панно, выполненные по&nbsp;авторскому дизайну.
+          </p>
+          <p class="comfort__descr section-descr">
+            В&nbsp;Доме предусмотрена собственная фитнес зона, на&nbsp;первом этаже, к услугам жителей
+            и&nbsp;их&nbsp;гостей: кафе и продуктовый магазин, аптека, химчистка, салон красоты и медицинский центр.
+            В&nbsp;северной части дома, для маленьких жителей, удачно расположилась оборудованная площадка для
+            развлечений.
+          </p>
+          <p class="comfort__descr section-descr">
+            Истинная роскошь должна быть элегантной, уютной, самобытной. Открытая эко-терраса в&nbsp;восточной,
+            тихой и&nbsp;защищенной от&nbsp;городского шума части дома, для тех, кто летом предпочитает выпить чашечку
+            кофе на рассвете под первыми лучами солнца, или тех, кто к полудню решит понежиться на&nbsp;солнышке.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer" id="contacts">
+    <div class="footer__container container flex">
+      <div class="footer__top flex">
+        <a class="footer__logo logo">
+          <svg width="195" height="33" viewBox="0 0 195 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M2.1 26H7.2V12.5L13.95 26H18.75L25.5 12.5V26H30.6V6.2H23.85L16.35 21.2L8.85 6.2H2.1V26ZM34.4953 22.55C34.4953 26 37.4953 26 40.4953 26H53.0953V15.05C53.0953 11.6 50.0953 11.6 47.0953 11.6H35.6953V14.45H46.7953C47.5453 14.45 48.2953 14.45 48.2953 15.35V17H40.4953C37.4953 17 34.4953 17 34.4953 20.45V22.55ZM39.2953 22.25V20.75C39.2953 19.85 40.0453 19.85 40.7953 19.85H48.2953V23.15H40.7953C40.0453 23.15 39.2953 23.15 39.2953 22.25ZM56.7023 26H61.5023V14.45H69.0023C69.7523 14.45 70.5023 14.45 70.5023 15.35V26H75.3023V15.05C75.3023 11.6 72.3023 11.6 69.3023 11.6H56.7023V26ZM78.9094 26H83.7094V14.45H91.2094C91.9594 14.45 92.7094 14.45 92.7094 15.35V26H97.5094V15.05C97.5094 11.6 94.5094 11.6 91.5094 11.6H83.7094V6.2H78.9094V26ZM101.116 22.55C101.116 26 104.116 26 107.116 26H119.716V15.05C119.716 11.6 116.716 11.6 113.716 11.6H102.316V14.45H113.416C114.166 14.45 114.916 14.45 114.916 15.35V17H107.116C104.116 17 101.116 17 101.116 20.45V22.55ZM105.916 22.25V20.75C105.916 19.85 106.666 19.85 107.416 19.85H114.916V23.15H107.416C106.666 23.15 105.916 23.15 105.916 22.25ZM123.323 22.55C123.323 26 126.323 26 129.323 26H134.123V23.15H129.623C128.873 23.15 128.123 23.15 128.123 22.25V14.45H134.123V11.6H128.123V6.2H123.323V22.55ZM137.738 22.55C137.738 26 140.738 26 143.738 26H148.538V23.15H144.038C143.288 23.15 142.538 23.15 142.538 22.25V14.45H148.538V11.6H142.538V6.2H137.738V22.55ZM152.152 22.55C152.152 26 155.152 26 158.152 26H170.752V15.05C170.752 11.6 167.752 11.6 164.752 11.6H153.352V14.45H164.452C165.202 14.45 165.952 14.45 165.952 15.35V17H158.152C155.152 17 152.152 17 152.152 20.45V22.55ZM156.952 22.25V20.75C156.952 19.85 157.702 19.85 158.452 19.85H165.952V23.15H158.452C157.702 23.15 156.952 23.15 156.952 22.25ZM174.359 26H179.159V14.45H186.659C187.409 14.45 188.159 14.45 188.159 15.35V26H192.959V15.05C192.959 11.6 189.959 11.6 186.959 11.6H174.359V26Z"
+              fill="#343434"></path>
+          </svg>
+        </a>
+        <div class="footer__contacts contacts flex">
+          <div class="contacts__content flex">
+            <h4 class="contacts__title">
+              Адрес
+            </h4>
+            <address class="contacts__content contacts-list flex">
+              <a class="contacts__link footer-link" href="#">
+                ул. Климашкина, 16
+              </a>
+              <a class="contacts__link footer-link" href="mailto:hello@manhattan.pro" aria-label="Электронный адрес">
+                hello@manhattan.pro
+              </a>
+              <a class="contacts__link footer-link" href="tel:+79225551234" aria-label="Телефон">
+                + 7 922 555 1234
+              </a>
+            </address>
+          </div>
+          <div class="contacts__social social flex">
+            <h4 class="contacts__title">
+              Соцсети
+            </h4>
+            <ul class="social__list list-reset flex">
+              <li class="social__item">
+                <a class="social__link footer-link" href="#" aria-label="Facebook">
+                  Facebook
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link footer-link" href="#" aria-label="Twitter">
+                  Twitter
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link footer-link" href="#" aria-label="Instagram">
+                  Instagram
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+      <nav class="footer__nav">
+        <ul class="footer__nav-list list-reset flex">
+          <li class="footer__nav-item">
+            <a class="footer__link footer-link" href="#">
+              Пресса
+            </a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__link footer-link" href="#">
+              Карьера
+            </a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__link footer-link" href="#">
+              Политика конфиденциальности
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</body>
+
+</html>
